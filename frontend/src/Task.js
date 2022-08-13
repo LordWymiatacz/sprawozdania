@@ -2,10 +2,11 @@ import React from "react";
 import { useEffect, useState } from "react";
 import axios from 'axios'
 import { CircularProgress } from '@mui/material';
-import './TodoCard.css'
+import './TaskCard.css'
 import {useParams} from "react-router-dom";
 import UploadFile from "./UploadFile";
 import UploadFile2 from "./UploadFile2";
+
   export default function Task(){
     const {id} = useParams()
     const [content, setContent] = useState()
