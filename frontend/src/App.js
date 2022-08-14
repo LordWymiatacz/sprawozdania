@@ -23,8 +23,8 @@ function App() {
       
       
       <Routes>
+        <Route path="/users" element={<CheckUser />} />
         <Route path="/" element={<Tasks />} />
-        <Route path="/users" element={<CheckUser/> } />
         <Route path="/home" element={<Home />} />
         <Route path="/about" element={<About/>} />
         <Route path="/tasks/:id" element={<Task/>} />
