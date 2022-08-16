@@ -1,0 +1,116 @@
+.showResults {
+  display: flex;
+  justify-content: space-between;
+}
+
+.results {
+  width: 50%;
+}
+
+.resultsAndButons {
+  display: flex;
+  justify-content: space-between;
+  padding: 10px;
+}
+
+.userResult {
+  display: flex;
+  justify-content: space-around;
+  text-align: center;
+  border: 1px solid black;
+  width: 70%;
+  /* padding: 10px; */
+}
+.results-buttons {
+  display: flex;
+  width: 30%;
+}
+
+.user {
+  width: 33%;
+}
+
+.user:nth-child(2) {
+  background-color: #f7f7f7;
+}
+.user:nth-child(3) {
+  background-color: #f2f2f2;
+}
+
+/* form ------------------------------------------------------------------- */
+.form {
+  grid-area: form;
+  width: 50%;
+  font-family: sans-serif;
+  box-shadow: 0 2.8px 2.2px rgba(0, 0, 0, 0.02),
+    0 6.7px 5.3px rgba(0, 0, 0, 0.028), 0 12.5px 10px rgba(0, 0, 0, 0.035),
+    0 22.3px 17.9px rgba(0, 0, 0, 0.042), 0 41.8px 33.4px rgba(0, 0, 0, 0.05),
+    0 100px 80px rgba(0, 0, 0, 0.07);
+  padding: 2rem;
+  background: #fff;
+
+  @media (max-width: 600px) {
+    padding: 1rem;
+  }
+}
+
+.form-row {
+  margin-bottom: 1rem;
+  text-align: center;
+}
+
+.form-label {
+  font-size: 0.8rem;
+  margin-bottom: 0.2rem;
+  color: #777;
+  font-size: 0.9rem;
+}
+.from-header {
+  display: flex;
+  /* justify-content: space-around; */
+}
+.form-control {
+  padding: 0 1rem;
+  height: 3rem;
+  border: 1px solid #aaa;
+  margin-bottom: 0.5rem;
+  font-family: inherit;
+  border-radius: 3px;
+}
+
+.form-control-input {
+  text-align: center;
+}
+
+.form-control-textarea {
+  height: 50rem;
+  padding: 1rem;
+  resize: vertical;
+}
+.button {
+  padding: 0.8rem 2rem;
+  background: none;
+  /* border: 2px solid #000; */
+  color: #000;
+  font-size: 1rem;
+  font-weight: bold;
+  border-radius: 0.188rem;
+  transition: 0.7s all;
+  cursor: pointer;
+}
+.button-delete,
+.button-show {
+  padding: 0.4rem;
+  border: 0 solid #000;
+  border-top: 1px solid black;
+  border-right: 1px solid black;
+  border-bottom: 1px solid black;
+}
+.button-delete:hover {
+  background-color: red;
+  color: white;
+}
+.button-show:hover {
+  background-color: green;
+  color: white;
+}
