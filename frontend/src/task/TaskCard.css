@@ -1,0 +1,47 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+.content {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-around;
+}
+
+.app {
+  padding: 50px;
+}
+
+.card {
+  width: 200px;
+  border: 2px solid black;
+  cursor: pointer;
+  padding: 20px;
+  margin: 10px;
+  align-items: center;
+}
+
+.card:hover {
+  background-color: #c7cff0;
+}
+
+.loader {
+  display: flex;
+  justify-content: center;
+}
+.header {
+  width: 100%;
+  background-color: rgb(121, 163, 253);
+  height: 80px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+.navbar {
+  padding: 20px;
+}
+
+.user {
+  padding: 20px;
+}
