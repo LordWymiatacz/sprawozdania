@@ -3,12 +3,13 @@ import {
   Routes,
   Route,
 } from "react-router-dom";
-import About from './About'
-import Tasks from "./Tasks";
-import Task from "./Task";
-import Header from "./Header";
-import Home from "./Home";
+import About from './pages/About'
+import Tasks from "./task/Tasks";
+import Task from "./task/Task";
+import Header from "./header/Header";
+import Home from "./pages/Home";
 import CheckUser from "./User/CheckUser";
+import AddTasks from "./mde/AddTasks";
 
 
 function App() {
@@ -24,6 +25,7 @@ function App() {
       
       <Routes>
         <Route path="/users" element={<CheckUser />} />
+        <Route path="/addTasks" element={<AddTasks/>}/>
         <Route path="/" element={<Tasks />} />
         <Route path="/home" element={<Home />} />
         <Route path="/about" element={<About/>} />
