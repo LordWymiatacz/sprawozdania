@@ -25,7 +25,8 @@ export default function Header(){
                 <Nav.Link as={Link} to='/home'>Home</Nav.Link>
                 <Nav.Link as={Link} to='/about'>O systemie</Nav.Link>
                 <NavDropdown title="Grupy" id="basic-nav-dropdown">
-                  <NavDropdown.Item as={Link} to='/addTasks'>Dodaj Grupe</NavDropdown.Item>
+                  <NavDropdown.Item as={Link} to='/addGroups'>Dodaj Grupe</NavDropdown.Item>
+                  <NavDropdown.Item as={Link} to='/addTasks'>Dodaj Task</NavDropdown.Item>
                   <NavDropdown.Item href="#action/3.2">
                     Another action
                   </NavDropdown.Item>
@@ -34,8 +35,9 @@ export default function Header(){
                   <NavDropdown.Item href="#action/3.4">
                     Przyszłe funkcje
                   </NavDropdown.Item>
-                  
                 </NavDropdown>
+                <Nav.Link as={Link} to='/groups'>Wyswietl grupy</Nav.Link>
+                <Nav.Link as={Link} to='/'>Wyswietl taski</Nav.Link>
               </Nav>
               <Navbar.Text>
             Zalogowany jako: <a href="#login">Mark Otto</a>
