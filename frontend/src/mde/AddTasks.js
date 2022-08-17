@@ -6,7 +6,7 @@ import Sidebar from "./Sidebar"
 import axios from "axios"
 
 
-function App() {
+function AddTasks() {
 const [notes, setNotes] = useState([]);
   const [activeNote, setActiveNote] = useState(false);
 
@@ -114,4 +114,4 @@ async function apiAddTask(dane) {
   );
 }
 
-export default App;
+export default AddTasks;
