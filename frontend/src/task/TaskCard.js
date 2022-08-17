@@ -7,7 +7,7 @@ export default function TaskCard({title, username,id}){
 return(
 
 
-<div className="card"  onClick={()=>navigate(`tasks/${id}`)}>
+<div className="card"  onClick={()=>navigate(`${id}`)}>
         <p>{title? `${title}`:" __________"}</p>
         {/* <p>{username? `${username}`:" __________"}</p> */}
        

@@ -37,7 +37,7 @@ export default function Header(){
                   </NavDropdown.Item>
                 </NavDropdown>
                 <Nav.Link as={Link} to='/groups'>Wyswietl grupy</Nav.Link>
-                <Nav.Link as={Link} to='/'>Wyswietl taski</Nav.Link>
+                <Nav.Link as={Link} to='/tasks'>Wyswietl taski</Nav.Link>
               </Nav>
               <Navbar.Text>
             Zalogowany jako: <a href="#login">Mark Otto</a>

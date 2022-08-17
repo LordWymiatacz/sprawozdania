@@ -16,11 +16,7 @@ import remarkGfm from 'remark-gfm'
     useEffect(()=>{
       const fetch = async()=>{
         const {data} = await axios.get(`http://localhost:3000/tasks/${id}`)
-        
             setContent(data)
-            console.log(data)
-    
-            console.log(content)
       }
         fetch()
     },[])

@@ -27,14 +27,17 @@ function App() {
       
       <Routes>
         <Route path="/users" element={<CheckUser />} />
-        <Route path="/addTasks" element={<AddTasks/>}/>
-        <Route path="/addGroups" element={<AddGroups/>}/>
-        <Route path="/" element={<Tasks />} />
         <Route path="/home" element={<Home />} />
         <Route path="/about" element={<About/>} />
-        <Route path="/groups/:id" element={<Group/>} />
+
+        <Route path="/addTasks" element={<AddTasks/>}/>
+        <Route path="/addGroups" element={<AddGroups/>}/>
+
+        <Route path="/tasks" element={<Tasks />} />
         <Route path="/groups" element={<Groups/>} />
-        <Route path="/tasks/:id" element={<Task/>} />
+
+        <Route path="/:id" element={<Group/>} />
+        <Route path="/:id/:id" element={<Task/>} />
       </Routes>
       
       </div>

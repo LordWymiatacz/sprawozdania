@@ -4,7 +4,8 @@ import axios from 'axios'
 import { CircularProgress } from '@mui/material';
 import TaskCard from './TaskCard'
 import './TaskCard.css'
-export default function Tasks(){
+
+export default function Tasks({id_group}){
 
 
 
@@ -12,11 +13,8 @@ export default function Tasks(){
 
     useEffect(()=>{
       const fetch = async()=>{
-        const {data} = await axios.get('http://localhost:3000/tasks')
-        
+        const {data} = await axios.get(`http://localhost:3000/tasks?group=${id_group}`)
             setContent(data)
-            console.log(data)
-            console.log(content)
       }
         fetch()
     },[])
