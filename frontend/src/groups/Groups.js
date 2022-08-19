@@ -16,7 +16,6 @@ export default function Groups(){
         
             setContent(data)
             console.log(data)
-            console.log(content)
       }
         fetch()
     },[])

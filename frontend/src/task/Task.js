@@ -5,9 +5,10 @@ import { CircularProgress } from '@mui/material';
 import './TaskCard.css'
 import {useParams} from "react-router-dom";
 import UploadFile from "../upload/UploadFile";
-import UploadFile2 from "../upload/UploadFile2";
+
 import ReactMarkdown from 'react-markdown'
 import remarkGfm from 'remark-gfm'
+import CheckUser from "../User/CheckUser";
 
   export default function Task(){
     const {id} = useParams()
@@ -19,14 +20,14 @@ import remarkGfm from 'remark-gfm'
             setContent(data)
       }
         fetch()
-    },[])
+    },[id])
 
     return(
     <div className="content">
     {content? (
     <div>
         <h1> {content.title? `${content.title}`:" Brak nazwy zadania"}</h1>
-        <p> {content.description? <ReactMarkdown children={content.description} remarkPlugins={[remarkGfm]} />:" Brak opisu"}</p>
+        <ReactMarkdown children={content.description? content.description: " Brak opisu"} remarkPlugins={[remarkGfm]} />
         {/* <p><b><i>Prowadzący:</i></b> {content.username? `${content.username}`:" _______________"}</p> */}
         
          </div>
@@ -36,7 +37,13 @@ import remarkGfm from 'remark-gfm'
         
         
       {/* <UploadFile/> */}
-      {/* <UploadFile2/> */}
+
+<CheckUser/>
+
+        <div>Grupa 1</div>
+        <div>Grupa 2</div>
+        <div>Grupa 3</div>
+
         </div>)
 }
 

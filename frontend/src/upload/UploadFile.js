@@ -30,7 +30,7 @@ function UploadFile() {
   return (
     <div className="App">
         <form onSubmit={handleSubmit}>
-          <h1>React File Upload</h1>
+          <h1>Prześlij plik z zadaniem</h1>
           <input type="file" onChange={handleChange}/>
           <button type="submit">Upload</button>
         </form>

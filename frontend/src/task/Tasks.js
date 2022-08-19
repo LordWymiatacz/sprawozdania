@@ -17,7 +17,7 @@ export default function Tasks({id_group}){
             setContent(data)
       }
         fetch()
-    },[])
+    },[id_group])
 
    return(
 

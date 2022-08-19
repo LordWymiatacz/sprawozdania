@@ -6,16 +6,18 @@ import Sidebar from "./Sidebar"
 import axios from "axios"
 
 
-function AddTasks() {
+function AddTasks({id_group}) {
+
 const [notes, setNotes] = useState([]);
   const [activeNote, setActiveNote] = useState(false);
 
-  const API = "http://localhost:3000/tasks"
+console.log(id_group)
+   const API2 = "http://localhost:3000/tasks"
+  const API = `http://localhost:3000/tasks?group=${id_group}`
 
 useEffect(()=>{
     const fetchData = async()=>{
         const {data} = await axios.get(API)
-        console.log(data)
         setNotes(data)
     }
     fetchData()
@@ -26,6 +28,7 @@ useEffect(()=>{
       id: uuid(),
       title: "Zadanie ",
       description: "",
+      group: id_group, 
       lastModified: Date.now(),
     };
 
@@ -56,7 +59,7 @@ useEffect(()=>{
   };
 // ------------------------------------------------------------------------------------------------------------------------------
 async function apiEditTask(id,dane){
-    const request = await fetch(`${API}/${id}`, {
+    const request = await fetch(`${API2}/${id}`, {
       method: 'PUT',
       headers:{
         'Accept':'application/json',
@@ -67,7 +70,7 @@ async function apiEditTask(id,dane){
   }
 
   async function deleteFetch(id) {
-    const request = await fetch(`${API}/${id}`, {
+    const request = await fetch(`${API2}/${id}`, {
       method: 'DELETE'
     })
   }
@@ -87,6 +90,7 @@ async function apiAddTask(dane) {
       {notes.length > 0?
       <>
       <Sidebar
+      key={notes.id}
         notes={notes}
         onAddNote={onAddNote}
         onDeleteNote={onDeleteNote}
@@ -107,9 +111,9 @@ async function apiAddTask(dane) {
                     Dodaj zadania
                 </button>
             </div>
-      
+            
     }
-      
+
     </div>
   );
 }
