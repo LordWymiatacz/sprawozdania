@@ -3,10 +3,11 @@ import './Style.css'
 import UserElement from './UserElement';
 import { CircularProgress } from '@mui/material';
 import axios from 'axios';
+import ContentModalUserScore from '../ContentModalUserScore'
 
-export default function CheckUser() {
+export default function CheckUser({id_task,group_task}) {
 
-  const apiURL = 'http://localhost:3000/users'
+  const apiURL = `http://localhost:3000/users?task=${id_task}&group_task=${group_task}`
   const [users, setUser] = useState([])
   const [name, setName] = useState("");
   const [email, setEmail] = useState("");
@@ -32,14 +33,14 @@ export default function CheckUser() {
     })
   }
 
-  function deleteUser(id) {
-    fetch(`${apiURL}/${id}`, {
-      method: 'DELETE'
-    }).then((result) => {
-      result.json()
-      getUsers()
-    })
-  }
+  // function deleteUser(id) {
+  //   fetch(`${apiURL}/${id}`, {
+  //     method: 'DELETE'
+  //   }).then((result) => {
+  //     result.json()
+  //     getUsers()
+  //   })
+  // }
   function selectUser(id)
   {
     let item=users[id-1];
@@ -70,7 +71,7 @@ export default function CheckUser() {
   return (
     <>
     
-    <h1>Students Results </h1>
+    {/* <h1>Students Results </h1> */}
     <div className="showResults">
       
    
@@ -87,25 +88,18 @@ export default function CheckUser() {
                 email={item.email}
                 index={item.index}
                  />
-          <div className='results-buttons'>
-              <button className="button button-delete" onClick={() => deleteUser(item.id)}>Delete</button>
-              <button className="button button-show" onClick={() => selectUser(item.id)}
-              >Show Details</button> 
-          </div>
+<ContentModalUserScore id={item.id}>
+  <div className="card"> Edytuj </div> 
+ </ContentModalUserScore>
               </>
             
             </div>
             ):<CircularProgress/>}
 
-
-
-            
-            
-            
             </div>
 
 
-    <form className="form">
+    {/* <form className="form">
       <div className='from-header'>
             <div className="form-row">
                 <label className="form-label">Index</label>
@@ -130,7 +124,7 @@ export default function CheckUser() {
             <div className="form-row">
                 <button onClick={updateUser}  className="button form-button">Update User</button>
             </div>
-        </form>
+        </form> */}
 </div>
     </>
     
