@@ -18,7 +18,7 @@ export default function Header(){
         <>
         <Navbar expand="lg" style={{ borderBottom:`1px solid blue`}}>
           <Container>
-            <Navbar.Brand as={Link} to='/'>Sprawozdania z zajęć</Navbar.Brand>
+            <Navbar.Brand>Sprawozdania z zajęć</Navbar.Brand>
             <Navbar.Toggle aria-controls="basic-navbar-nav" />
             <Navbar.Collapse className="justify-content-end">
               <Nav className="me-auto">
