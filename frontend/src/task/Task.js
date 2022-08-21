@@ -32,10 +32,19 @@ import CheckUser from "../User/CheckUser";
         {/* <p><b><i>Prowadzący:</i></b> {content.username? `${content.username}`:" _______________"}</p> */}
         
         <div className="userResults">
-        {/* Grupa 1 */}
+          <div>
+          Grupa 1
         <CheckUser  id_task={content.id} group_task='1'/>
-        {/* Grupa 2 */}
+          </div>
+          <div>
+            Grupa 2
         <CheckUser  id_task={content.id} group_task='2'/>
+          </div>
+          <div>
+             Grupa 3
+        <CheckUser  id_task={content.id} group_task='3'/>
+          </div>
+       
 
 
         </div>
