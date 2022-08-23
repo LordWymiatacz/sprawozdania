@@ -76,7 +76,8 @@ export default function CheckUser({id_task,group_task}) {
       
    
           <div className='results'>
-
+            
+            {group_task==1?'Grupa 1':group_task==2?'Grupa 2':'Grupa 3'}
             
 {users? users.map((item) =>
 <div className='resultsAndButons'>
@@ -89,7 +90,7 @@ export default function CheckUser({id_task,group_task}) {
                 index={item.index}
                  />
 <ContentModalUserScore id={item.id}>
-  <div className="card"> Edytuj </div> 
+  <img src='https://toppng.com/uploads/preview/junior-icon-editor-free-download-for-windows-edit-icon-blue-1156302584549wxzpwmhr.png' height={30} width={30} alt="edit icon"></img>
  </ContentModalUserScore>
               </>
             

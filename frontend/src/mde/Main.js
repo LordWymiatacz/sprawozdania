@@ -13,7 +13,7 @@ const Main = ({ activeNote, onUpdateNote }) => {
     });
   };
 
-  if (!activeNote) return <div className="no-active-note">Wybierz zadanie</div>;
+  if (!activeNote) return <div className="no-active-note">Wybierz przedmiot</div>;
 
   return (
     <div className="app-main">
@@ -29,7 +29,7 @@ const Main = ({ activeNote, onUpdateNote }) => {
         />
         <textarea
           id="description"
-          placeholder="Opis zadania..."
+          placeholder="Opis przedmiotu..."
           value={activeNote.description}
           onChange={(e) => onEditField("description", e.target.value)}
         />

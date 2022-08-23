@@ -26,27 +26,22 @@ import CheckUser from "../User/CheckUser";
     <div className="content">
     {content? (
     <div>
+  
+      <UploadFile/>
 
         <h1> {content.title? `${content.title}`:" Brak nazwy zadania"}</h1>
         <ReactMarkdown children={content.description? content.description: " Brak opisu"} remarkPlugins={[remarkGfm]} />
         {/* <p><b><i>Prowadzący:</i></b> {content.username? `${content.username}`:" _______________"}</p> */}
         
         <div className="userResults">
-          <div>
-          Grupa 1
-        <CheckUser  id_task={content.id} group_task='1'/>
-          </div>
-          <div>
-            Grupa 2
+          
+
+        <CheckUser  id_task={content.id} group_task='1'/> 
+
         <CheckUser  id_task={content.id} group_task='2'/>
-          </div>
-          <div>
-             Grupa 3
+          
         <CheckUser  id_task={content.id} group_task='3'/>
-          </div>
-       
-
-
+          
         </div>
       
          </div>

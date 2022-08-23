@@ -24,7 +24,7 @@ useEffect(()=>{
   const onAddNote = () => {
     const newNote = {
       id: uuid(),
-      title: "Grupa ",
+      title: "",
       description: "",
       lastModified: Date.now(),
     };
@@ -99,12 +99,12 @@ async function apiAddTask(dane) {
       
       </>:
       <div className="no-notes">
-                <h1>Brak grup w bazie</h1>
+                <h1>Brak przedmiotów w bazie</h1>
                 <button 
                     className="first-note" 
                     onClick={onAddNote}
                 >
-                    Dodaj grupe
+                    Dodaj przedmiot
                 </button>
             </div>
       

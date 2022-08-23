@@ -10,7 +10,7 @@ const Sidebar = ({
   return (
     <div className="app-sidebar">
       <div className="app-sidebar-header">
-        <h1>Zadania</h1>
+        <h1>Przedmiot</h1>
         <button onClick={onAddNote}>Add</button>
       </div>
       <div className="app-sidebar-notes">
@@ -27,7 +27,7 @@ const Sidebar = ({
             <p>{notes.title}</p>
             <small className="note-meta">
               Last Modified{" "}
-              {new Date(lastModified).toLocaleDateString("en-GB", {
+              {new Date(lastModified).toLocaleDateString("pl-PL", {
                 hour: "2-digit",
                 minute: "2-digit",
               })}

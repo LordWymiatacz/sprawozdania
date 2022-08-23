@@ -3,12 +3,17 @@
   padding: 0;
   box-sizing: border-box;
 }
-.content {
+/* .content {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-around;
+} */
+
+.userResults {
   display: flex;
   flex-wrap: wrap;
   justify-content: space-around;
 }
-
 .app {
   padding: 50px;
 }

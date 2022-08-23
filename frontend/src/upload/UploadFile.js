@@ -1,4 +1,3 @@
-// import './App.css';
 import React, {useState} from 'react';
 import axios from 'axios';
 
@@ -28,9 +27,9 @@ function UploadFile() {
   }
 
   return (
-    <div className="App">
+    <div>
         <form onSubmit={handleSubmit}>
-          <h1>Prześlij plik z zadaniem</h1>
+          <p>Prześlij plik z zadaniem</p>
           <input type="file" onChange={handleChange}/>
           <button type="submit">Upload</button>
         </form>

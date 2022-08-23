@@ -16,7 +16,6 @@ import ContentModal from '../ContentModal'
 
     const [content, setContent] = useState()
 
-    const navigate = useNavigate();
 
     useEffect(()=>{
       const fetch = async()=>{
@@ -35,7 +34,7 @@ import ContentModal from '../ContentModal'
     {content? (
     <div>
       <ContentModal id_group={content.id}>
-  <button className="button-openModal">Dodaj zadania</button>
+  <div className="card">Dodaj / modyfikuj zadania </div> 
  </ContentModal>
         <h1> {content.title? `${content.title}`:" Brak nazwy grupy"}</h1>
         <ReactMarkdown children={content.description? content.description: " Brak opisu dla grupy"} remarkPlugins={[remarkGfm]} />

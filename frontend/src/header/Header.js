@@ -24,8 +24,8 @@ export default function Header(){
               <Nav className="me-auto">
                 <Nav.Link as={Link} to='/home'>Home</Nav.Link>
                 <Nav.Link as={Link} to='/about'>O systemie</Nav.Link>
-                <Nav.Link as={Link} to='/addGroups'>Dodaj Grupe</Nav.Link>
-                <Nav.Link as={Link} to='/groups'>Wyswietl grupy</Nav.Link>
+                <Nav.Link as={Link} to='/addGroups'>Dodaj Przedmiot</Nav.Link>
+                <Nav.Link as={Link} to='/groups'>Wyswietl przedmioty</Nav.Link>
               </Nav>
               <Navbar.Text>
             Zalogowany jako: <a href="#login">Mark Otto</a>
