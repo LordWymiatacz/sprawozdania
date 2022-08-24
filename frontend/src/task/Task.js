@@ -10,7 +10,7 @@ import ReactMarkdown from 'react-markdown'
 import remarkGfm from 'remark-gfm'
 import CheckUser from "../User/CheckUser";
 
-  export default function Task(){
+  export default function Task({logged}){
     const {id} = useParams()
     const [content, setContent] = useState()
 
@@ -36,11 +36,11 @@ import CheckUser from "../User/CheckUser";
         <div className="userResults">
           
 
-        <CheckUser  id_task={content.id} group_task='1'/> 
+        <CheckUser  id_task={content.id} group_task='1' logged={logged}/> 
 
-        <CheckUser  id_task={content.id} group_task='2'/>
+        <CheckUser  id_task={content.id} group_task='2' logged={logged}/>
           
-        <CheckUser  id_task={content.id} group_task='3'/>
+        <CheckUser  id_task={content.id} group_task='3' logged={logged}/>
           
         </div>
       

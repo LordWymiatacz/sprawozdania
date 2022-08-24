@@ -11,7 +11,7 @@ import AddTasks from "../mde/AddTasks";
 import {useNavigate} from 'react-router-dom';
 import ContentModal from '../ContentModal'
 
-  export default function Group(){
+  export default function Group({logged}){
     const {id} = useParams()
 
     const [content, setContent] = useState()
@@ -33,9 +33,8 @@ import ContentModal from '../ContentModal'
 
     {content? (
     <div>
-      <ContentModal id_group={content.id}>
-  <div className="card">Dodaj / modyfikuj zadania </div> 
- </ContentModal>
+      {logged?<ContentModal id_group={content.id}><div className="card">Dodaj / modyfikuj zadania </div></ContentModal>:''}
+
         <h1> {content.title? `${content.title}`:" Brak nazwy grupy"}</h1>
         <ReactMarkdown children={content.description? content.description: " Brak opisu dla grupy"} remarkPlugins={[remarkGfm]} />
         {/* <p><b><i>Prowadzący:</i></b> {content.username? `${content.username}`:" _______________"}</p> */}
