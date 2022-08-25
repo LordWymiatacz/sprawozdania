@@ -14,6 +14,7 @@ export default function Form({id}) {
   const [review, setReview] = useState("")
   const [task, setTask] = useState("")
   const [group_task, setGroupTask] = useState("")
+  const [score, setScore] = useState("")
   // const [userId,setUserId]=useState(null)
 
     useEffect(() => {
@@ -30,7 +31,7 @@ export default function Form({id}) {
         setEmail(resp.email)
         setTask(resp.task)
         setGroupTask(resp.group_task)
-        // setUserId(resp.id)
+        setScore(resp.score)
         setReview(resp.review)
         console.log(resp)
       })
@@ -40,7 +41,7 @@ export default function Form({id}) {
 
   function updateUser()
   {
-    let item={name,index,email,review,task,group_task}
+    let item={name,index,email,review,task,score,group_task}
 
     fetch(`${apiURL}`, {
       method: 'PUT',
@@ -81,7 +82,9 @@ export default function Form({id}) {
             </div>
 
           </div>
-            
+            <div className="form-row">
+                <input onChange={(e)=>{setScore(e.target.value)}} type="text" className="form-control form-control-input" value={score} placeholder="Punkty za zadania"/>
+            </div>
             <div className="form-row">
                 <label className="form-label" >Treść</label>
                 <textarea onChange={(e)=>{setReview(e.target.value)}} className="form-control form-control-textarea" value={review}/>
