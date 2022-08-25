@@ -89,7 +89,7 @@ async function apiAddTask(dane) {
     <div className="App">
       {notes.length > 0?
       <>
-      <Sidebar
+      <Sidebar taskOrGroup={"task"}
       key={notes.id}
         notes={notes}
         onAddNote={onAddNote}
@@ -97,7 +97,7 @@ async function apiAddTask(dane) {
         activeNote={activeNote}
         setActiveNote={setActiveNote}
       />
-      <Main 
+      <Main taskOrGroup={"task"}
       activeNote={getActiveNote()} 
       onUpdateNote={onUpdateNote} />
       

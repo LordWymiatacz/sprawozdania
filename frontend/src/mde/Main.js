@@ -2,7 +2,7 @@ import ReactMarkdown from "react-markdown";
 import React from "react";
 
 
-const Main = ({ activeNote, onUpdateNote }) => {
+const Main = ({ activeNote, onUpdateNote, taskOrGroup }) => {
 
 
   const onEditField = (field, value) => {
@@ -13,7 +13,7 @@ const Main = ({ activeNote, onUpdateNote }) => {
     });
   };
 
-  if (!activeNote) return <div className="no-active-note">Wybierz przedmiot</div>;
+  if (!activeNote) return <div className="no-active-note">{taskOrGroup=="task"?"Wybierz zadanie":"Wybierz przedmiot"}</div>;
 
   return (
     <div className="app-main">
@@ -29,7 +29,7 @@ const Main = ({ activeNote, onUpdateNote }) => {
         />
         <textarea
           id="description"
-          placeholder="Opis przedmiotu..."
+          placeholder={taskOrGroup=="task"?"Opis zadania":"Opis przedmiotu"}
           value={activeNote.description}
           onChange={(e) => onEditField("description", e.target.value)}
         />
