@@ -1,6 +1,7 @@
 import React, { useState } from 'react';
 import PropTypes from 'prop-types';
 import './Login.css';
+import { useNavigate } from "react-router-dom";
 
 async function loginUser(credentials) {
  return fetch('https://pacific-earth-26177.herokuapp.com/login', {
@@ -14,6 +15,7 @@ async function loginUser(credentials) {
 }
 
 export default function Login({ setToken }) {
+  const navigate = useNavigate()
   const [username, setUserName] = useState();
   const [password, setPassword] = useState();
 
@@ -24,6 +26,7 @@ export default function Login({ setToken }) {
       password
     });
     setToken(token);
+    navigate(`/groups`)
   }
 
   let [authMode, setAuthMode] = useState("signin")

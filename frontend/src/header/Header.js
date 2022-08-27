@@ -10,10 +10,16 @@ import {
   Route,
   Link,
 } from "react-router-dom";
+import { useNavigate } from "react-router-dom";
 
 
 export default function Header({logged}){
-
+  const navigate = useNavigate()
+function logout(){
+  navigate(`/groups`)
+  localStorage.clear()
+  window.location.reload(false)
+}
     return (
         <>
         <Navbar expand="lg" style={{ borderBottom:`1px solid blue`}}>
@@ -28,7 +34,7 @@ export default function Header({logged}){
                 <Nav.Link as={Link} to='/groups'>Wyswietl przedmioty</Nav.Link>
               </Nav>
               <Navbar.Text>
-                {logged?<Nav.Link onClick={()=>{localStorage.clear(); window.location.reload(false)}} >Wyloguj</Nav.Link>:<Nav.Link as={Link} to='/login'>Zaloguj się</Nav.Link>}
+                {logged?<Nav.Link onClick={logout} >Wyloguj</Nav.Link>:<Nav.Link as={Link} to='/login'>Zaloguj się</Nav.Link>}
           </Navbar.Text>
             </Navbar.Collapse>
           </Container>
