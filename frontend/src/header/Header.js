@@ -28,7 +28,7 @@ export default function Header({logged}){
                 <Nav.Link as={Link} to='/groups'>Wyswietl przedmioty</Nav.Link>
               </Nav>
               <Navbar.Text>
-                {logged?<Nav.Link as={Link} to='/login'>Wyloguj</Nav.Link>:<Nav.Link as={Link} to='/login'>Zaloguj się</Nav.Link>}
+                {logged?<Nav.Link onClick={()=>{localStorage.clear(); window.location.reload(false)}} >Wyloguj</Nav.Link>:<Nav.Link as={Link} to='/login'>Zaloguj się</Nav.Link>}
           </Navbar.Text>
             </Navbar.Collapse>
           </Container>

@@ -11,9 +11,8 @@ function AddTasks({id_group}) {
 const [notes, setNotes] = useState([]);
   const [activeNote, setActiveNote] = useState(false);
 
-console.log(id_group)
-   const API2 = "http://localhost:3000/tasks"
-  const API = `http://localhost:3000/tasks?group=${id_group}`
+   const API2 = `${process.env.REACT_APP_API}/tasks`
+  const API = `${process.env.REACT_APP_API}/tasks?group=${id_group}`
 
 useEffect(()=>{
     const fetchData = async()=>{

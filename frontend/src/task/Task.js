@@ -16,7 +16,7 @@ import CheckUser from "../User/CheckUser";
 
     useEffect(()=>{
       const fetch = async()=>{
-        const {data} = await axios.get(`http://localhost:3000/tasks/${id}`)
+        const {data} = await axios.get(`${process.env.REACT_APP_API}/tasks/${id}`)
             setContent(data)
       }
         fetch()
@@ -36,11 +36,11 @@ import CheckUser from "../User/CheckUser";
         <div className="userResults">
           
 
-        <CheckUser  id_task={content.id} group_task='1' logged={logged}/> 
+        <CheckUser id_task={content.id} group_task='1' logged={logged}/> 
 
-        <CheckUser  id_task={content.id} group_task='2' logged={logged}/>
+        <CheckUser id_task={content.id} group_task='2' logged={logged}/>
           
-        <CheckUser  id_task={content.id} group_task='3' logged={logged}/>
+        <CheckUser id_task={content.id} group_task='3' logged={logged}/>
           
         </div>
       

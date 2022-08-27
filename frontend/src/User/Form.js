@@ -6,7 +6,7 @@ import axios from 'axios';
 
 export default function Form({id}) {
 
-  const apiURL = `http://localhost:3000/users/${id}`
+  const apiURL = `${process.env.REACT_APP_API}/users/${id}`
   const [users, setUser] = useState([])
   const [name, setName] = useState("");
   const [email, setEmail] = useState("");
@@ -33,7 +33,6 @@ export default function Form({id}) {
         setGroupTask(resp.group_task)
         setScore(resp.score)
         setReview(resp.review)
-        console.log(resp)
       })
     })
   }

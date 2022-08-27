@@ -12,10 +12,9 @@ export default function Groups(){
 
     useEffect(()=>{
       const fetch = async()=>{
-        const {data} = await axios.get('http://localhost:3000/groups')
+        const {data} = await axios.get(`${process.env.REACT_APP_API}/groups`)
         
             setContent(data)
-            console.log(data)
       }
         fetch()
     },[])

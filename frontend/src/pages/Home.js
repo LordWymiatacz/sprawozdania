@@ -11,11 +11,9 @@ export default function Home(){
 
     useEffect(()=>{
       const fetch = async()=>{
-        const {data} = await axios.get('http://localhost:3000/pages?name=home')
+        const {data} = await axios.get(`${process.env.REACT_APP_API}/pages?name=home`)
         
             setContent(data[0].body)
-            console.log(data[0].body)
-            console.log(content)
       }
         fetch()
     },[])

@@ -19,7 +19,7 @@ import ContentModal from '../ContentModal'
 
     useEffect(()=>{
       const fetch = async()=>{
-        const {data} = await axios.get(`http://localhost:3000/groups/${id}`)
+        const {data} = await axios.get(`${process.env.REACT_APP_API}/groups/${id}`)
             setContent(data)
       }
         fetch()

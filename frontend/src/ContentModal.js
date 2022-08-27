@@ -28,7 +28,6 @@ export default function ContentModal({children, id_group}) {
   const handleOpen = () => setOpen(true);
   const handleClose = () => setOpen(false);
 
-  console.log(id_group)
 
   return (
     <>

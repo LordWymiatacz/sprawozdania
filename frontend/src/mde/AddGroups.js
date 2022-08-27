@@ -10,12 +10,12 @@ function AddGroups() {
 const [notes, setNotes] = useState([]);
   const [activeNote, setActiveNote] = useState(false);
 
-  const API = "http://localhost:3000/groups"
+  const API = `${process.env.REACT_APP_API}/groups`
+  
 
 useEffect(()=>{
     const fetchData = async()=>{
         const {data} = await axios.get(API)
-        console.log(data)
         setNotes(data)
     }
     fetchData()

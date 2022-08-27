@@ -32,7 +32,6 @@ export default function ContentModalUserScore({children, id}) {
   const handleOpen = () => setOpen(true);
   const handleClose = () => setOpen(false);
 
-  console.log(id)
 
   return (
     <>
@@ -51,7 +50,7 @@ export default function ContentModalUserScore({children, id}) {
         <Fade in={open}>
           <Box sx={style}>
             <button className="button-closeModal" onClick={handleClose}>X</button>
-            <Form  id={id}/>
+            <Form  key={id} id={id}/>
           </Box>
         </Fade>
       </Modal>

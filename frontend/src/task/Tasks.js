@@ -13,7 +13,7 @@ export default function Tasks({id_group}){
 
     useEffect(()=>{
       const fetch = async()=>{
-        const {data} = await axios.get(`http://localhost:3000/tasks?group=${id_group}`)
+        const {data} = await axios.get(`${process.env.REACT_APP_API}/tasks?group=${id_group}`)
             setContent(data)
       }
         fetch()

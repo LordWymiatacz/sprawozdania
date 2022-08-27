@@ -27,8 +27,8 @@ function App() {
       <div className='app'>
         <Routes>
           <Route path="/home" element={<Home />} />
+          <Route path="/" element={<Home />} />
           <Route path="/about" element={<About/>} />
-          {/* <Route path="/d" element={<Dashboard logged={false}/>} /> */}
           <Route path='/login' element={<Login setToken={setToken} />}/>
           <Route path="/tasks" element={<Tasks />} />
           <Route path="/groups" element={<Groups/>} />
@@ -56,6 +56,7 @@ function App() {
       <Routes>
         {/* <Route path="/users" element={<CheckUser />} /> */}
         <Route path="/home" element={<Home />} />
+        <Route path="/" element={<Home />} />
         <Route path="/about" element={<About/>} />
 
         <Route path="addTasks" element={<AddTasks/>}/>
