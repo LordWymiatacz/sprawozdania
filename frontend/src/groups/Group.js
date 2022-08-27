@@ -33,7 +33,7 @@ import ContentModal from '../ContentModal'
 
     {content? (
     <div>
-      {logged?<ContentModal id_group={content.id}><div className="card">Dodaj / modyfikuj zadania </div></ContentModal>:''}
+      {logged?<ContentModal id_group={content.id}><div className="card">Kreator zadań </div></ContentModal>:''}
 
         <h1> {content.title? `${content.title}`:" Brak nazwy grupy"}</h1>
         <ReactMarkdown children={content.description? content.description: " Brak opisu dla grupy"} remarkPlugins={[remarkGfm]} />

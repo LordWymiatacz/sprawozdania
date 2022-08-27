@@ -3,10 +3,6 @@
   justify-content: space-between;
 }
 
-/* .results {
-  width: 50%;
-} */
-
 .resultsAndButons {
   display: flex;
   /* justify-content: space-between; */
@@ -27,7 +23,7 @@
 }
 
 .user {
-  width: 33%;
+  width: 50%;
 }
 
 .user:nth-child(2) {

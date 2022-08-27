@@ -2,29 +2,35 @@
   "groups": [
     {
       "id": "5d0670-08c2-0527-ea50-4e53377124",
-      "title": "Grupa 1",
-      "description": "opis grupy 1 ",
-      "lastModified": 1660683041878
+      "title": "Przedmiot 3",
+      "description": "opis przedmiotu 3",
+      "lastModified": 1661456920929
     },
     {
       "id": "ad4411e-4a28-17d-687c-13c560c570b2",
-      "title": "Grupa 2 ",
-      "description": "asdas",
-      "lastModified": 1661108797542
+      "title": "Przedmiot 2 ",
+      "description": "asdassss",
+      "lastModified": 1661457102203
     },
     {
       "id": "a2713fa-4bda-48c6-87c7-57631101b18",
-      "title": "Grupa ",
+      "title": "Przedmiot 1 ",
+      "description": "Opis przedmiotu nr1\n# Jakiś paragraf\n1. Jakaś lista\n2. Coś innego\n\n- Lista kropkowa\n- Coś innego z listy\n### Mniejszy paragraf",
+      "lastModified": 1661456980230
+    },
+    {
+      "id": "8bd83af-e77c-cf-3418-3ab5b14eab6b",
+      "title": "",
       "description": "",
-      "lastModified": 1661109352674
+      "lastModified": 1661460504342
     }
   ],
   "tasks": [
     {
       "id": "5d0670-08c2-0527-ea5s0-4e53377661",
-      "title": "Zadanie 1",
-      "description": "\nopis zadania zadanie 1\n",
-      "lastModified": 1661084522821,
+      "title": "df",
+      "description": "df",
+      "lastModified": 1661460455126,
       "group": "5d0670-08c2-0527-ea50-4e53377124"
     },
     {
@@ -78,10 +84,31 @@
     },
     {
       "id": "4bfdc48-1ea7-e36-76f-7e8bb4abc",
-      "title": "Zadanie ",
-      "description": "",
+      "title": "",
+      "description": "dd",
       "group": "5d0670-08c2-0527-ea50-4e53377124",
-      "lastModified": 1661109341040
+      "lastModified": 1661460457150
+    },
+    {
+      "id": "ad5148a-d4af-e5c1-4520-fbfb6baf0071",
+      "title": "Zadanie 1",
+      "description": "",
+      "group": "a2713fa-4bda-48c6-87c7-57631101b18",
+      "lastModified": 1661457002409
+    },
+    {
+      "id": "7daab6-711-287a-3ae6-4cdba71f16ad",
+      "title": "Zadanie 2",
+      "description": "",
+      "group": "a2713fa-4bda-48c6-87c7-57631101b18",
+      "lastModified": 1661457004440
+    },
+    {
+      "id": "beb3ac5-a0de-1add-be8b-6b2cab47500",
+      "title": "Zadanie 3",
+      "description": "",
+      "group": "a2713fa-4bda-48c6-87c7-57631101b18",
+      "lastModified": 1661457005834
     }
   ],
   "users": [
@@ -91,6 +118,7 @@
       "email": "name1@wp.pl",
       "review": "dsdsd",
       "task": "5d0670-08c2-0527-ea5s0-4e53377661",
+      "score": "123",
       "group_task": 1,
       "id": 1
     },
