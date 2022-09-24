@@ -46,6 +46,7 @@ export default function CheckUser({id_task,group_task,logged}) {
                 name={item.name}
                 email={item.email}
                 index={item.index}
+                logged={logged}
                  />
 {logged?<ContentModalUserScore  id={item.id}>
   <img src='https://toppng.com/uploads/preview/junior-icon-editor-free-download-for-windows-edit-icon-blue-1156302584549wxzpwmhr.png' height={30} width={30} alt="edit icon"></img>

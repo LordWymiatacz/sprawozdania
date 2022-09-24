@@ -12,7 +12,6 @@ export default function About(){
     useEffect(()=>{
       const fetch = async()=>{
         const {data} = await axios.get(`${process.env.REACT_APP_API}/pages?name=about`)
-        
             setContent(data[0].body)
 
       }

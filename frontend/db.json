@@ -2,64 +2,30 @@
   "groups": [
     {
       "id": "5d0670-08c2-0527-ea50-4e53377124",
-      "title": "Przedmiot 3",
-      "description": "opis przedmiotu 3",
-      "lastModified": 1661456920929
-    },
-    {
-      "id": "ad4411e-4a28-17d-687c-13c560c570b2",
-      "title": "Przedmiot 2 ",
-      "description": "asdassss",
-      "lastModified": 1661457102203
+      "title": "Przedmiot 1",
+      "description": "Donec tortor orci, sodales non enim quis, malesuada aliquet felis. Nam et vulputate felis, vitae cursus nibh. Aenean porta, tellus in scelerisque gravida, est neque hendrerit libero, non interdum odio risus non neque. Integer semper, massa quis rutrum volutpat, odio neque bibendum mauris, eget finibus orci mi vitae est. Praesent lacinia nibh et nisl feugiat fringilla. Donec cursus facilisis nunc, sit amet sodales enim semper quis. Aliquam ac orci quam. Fusce placerat porttitor vehicula. Vestibulum commodo vestibulum blandit. Vivamus luctus augue vel consequat volutpat. Fusce pulvinar rutrum nibh a vehicular.",
+      "lastModified": 1664044915939
     },
     {
       "id": "a2713fa-4bda-48c6-87c7-57631101b18",
-      "title": "Przedmiot 1 ",
-      "description": "Opis przedmiotu nr1\n# Jakiś paragraf\n1. Jakaś lista\n2. Coś innego\n\n- Lista kropkowa\n- Coś innego z listy\n### Mniejszy paragraf",
-      "lastModified": 1661456980230
+      "title": "Przedmiot 2",
+      "description": "Opis przedmiotu nr 2\n# Jakiś paragraf\n1. Jakaś lista\n2. Coś innego\n\n- Lista kropkowa\n- Coś innego z listy\n### Mniejszy paragraf",
+      "lastModified": 1664044850117
     },
     {
-      "id": "8bd83af-e77c-cf-3418-3ab5b14eab6b",
-      "title": "",
+      "id": "aa71dd3-fb00-7424-e3f-a82db60d8d77",
+      "title": "Przedmiot 3",
       "description": "",
-      "lastModified": 1661460504342
+      "lastModified": 1664044857931
     }
   ],
   "tasks": [
-    {
-      "id": "5d0670-08c2-0527-ea5s0-4e53377661",
-      "title": "df",
-      "description": "df",
-      "lastModified": 1661460455126,
-      "group": "5d0670-08c2-0527-ea50-4e53377124"
-    },
-    {
-      "id": "8854311-3522-07ca-f17-b22365c4c144",
-      "title": "Zadanie 2",
-      "description": "opis zadania zadanie 2",
-      "lastModified": 1660682729767,
-      "group": "5d0670-08c2-0527-ea50-4e53377124"
-    },
-    {
-      "id": "c4f1033-cb8-1eb5-23d4-c3ab0e731e88",
-      "title": "Zadanie sdsdsds",
-      "description": "zmiana opisu\nzmiana opisu\nzmiana opisu\nzmiana opisu\nzmiana opisu\nzmiana opisu\nzmiana opisu\nzmiana opisu\nzmiana opisu\nzmiana opisu\nzmiana opisu/n\n/n\n",
-      "group": "5d0670-08c2-0527-ea50-4e53377124",
-      "lastModified": 1660941282983
-    },
     {
       "id": "4b47dc7-cf2f-a7ff-f781-7ec6138a03a3",
       "title": "Zadanie 1",
       "description": "Zadanie dla greupy",
       "group": "4ceeaa-8dd-03a-0e6c-286746705ee",
       "lastModified": 1661007283483
-    },
-    {
-      "id": "ad7c560-d237-6162-5121-f7bd26bef26e",
-      "title": "Zadanie testowe",
-      "description": "",
-      "group": "5d0670-08c2-0527-ea50-4e53377124",
-      "lastModified": 1661083894457
     },
     {
       "id": "bbb0283-2e3c-7d85-cd5d-bd026d763f8b",
@@ -83,13 +49,6 @@
       "lastModified": 1661108850288
     },
     {
-      "id": "4bfdc48-1ea7-e36-76f-7e8bb4abc",
-      "title": "",
-      "description": "dd",
-      "group": "5d0670-08c2-0527-ea50-4e53377124",
-      "lastModified": 1661460457150
-    },
-    {
       "id": "ad5148a-d4af-e5c1-4520-fbfb6baf0071",
       "title": "Zadanie 1",
       "description": "",
@@ -109,66 +68,105 @@
       "description": "",
       "group": "a2713fa-4bda-48c6-87c7-57631101b18",
       "lastModified": 1661457005834
+    },
+    {
+      "id": "f022ca-ba5-5ee4-ebb6-7083f7caf452",
+      "title": "Temat 1",
+      "description": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Duis vitae velit diam. Aenean nec elit at mi faucibus elementum. Curabitur interdum libero quis diam efficitur, dignissim ornare justo interdum. Vivamus eu varius lorem. Mauris at egestas tellus, quis volutpat libero. Aenean diam nunc, imperdiet id finibus ac, pellentesque at turpis. Suspendisse elit sem, feugiat ac pharetra eget, posuere non nisi. Proin quis diam quam. Nam consequat condimentum efficitur.\n\n-  luctus lacinia. Cras rutrum massa orci, ac ornare ex auctor sed. Nunc laoreet auctor magna, ac finibus justo mollis et. Nullam aliquet finibus augue ac eleme\n1. tum sagittis. Sed ultrices ligula eu justo gravida, quis porttitor\n2. tum sagittis. Sed ultrices ligula eu justo gravida, quis porttitor\n\n\n\n\nA paragraph with *emphasis* and **strong importance**.\n\n\n* Lists\n* [ ] todo\n* [x] done\n\n\nCurabitur vitae tincidunt enim, id semper tellus. Donec ac efficitur tellus. Ut quis mi sollicitudin urna varius fringilla sed quis velit. Aenean nec mi finibus, pretium est at, sagittis dui. Nulla sed sapien et purus euismod commodo ut in velit. Nunc ac nisi sed dui feugiat laoreet ac nec ipsum. Nam dignissim augue et porttitor dictum. Mauris convallis libero massa, in tincidunt felis maximus congue. Cras elementum justo ac nisl congue, quis gravida est tristique. Donec molestie tristique rutrum. Nam feugiat orci non malesuada euismod.",
+      "group": "5d0670-08c2-0527-ea50-4e53377124",
+      "lastModified": 1664044710857
+    },
+    {
+      "id": "7e86bca-3ec-8d37-3373-3138d8ef463",
+      "title": "Temat 2",
+      "description": "",
+      "group": "5d0670-08c2-0527-ea50-4e53377124",
+      "lastModified": 1664044734789
+    },
+    {
+      "id": "064a0-5dfe-7b8c-0336-1ab4f2611354",
+      "title": "Temat 3",
+      "description": "\nA paragraph with *emphasis* and **strong importance**.\n\n\nCurabitur vitae tincidunt enim, id semper tellus. Donec ac efficitur tellus. Ut quis mi sollicitudin urna varius fringilla sed quis velit. Aenean nec mi finibus, pretium est at, sagittis dui. Nulla sed sapien et purus euismod commodo ut in velit. Nunc ac nisi sed dui feugiat laoreet ac nec ipsum. Nam dignissim augue et porttitor dictum. Mauris convallis libero massa, in tincidunt felis maximus congue. Cras elementum justo ac nisl congue, quis gravida est tristique. Donec molestie tristique rutrum. Nam feugiat orci non malesuada euismod.",
+      "group": "5d0670-08c2-0527-ea50-4e53377124",
+      "lastModified": 1664044762492
     }
   ],
   "users": [
     {
-      "name": "Name 1",
+      "name": "Jan",
       "index": "123456",
-      "email": "name1@wp.pl",
+      "email": "jan@wp.pl",
       "review": "dsdsd",
-      "task": "5d0670-08c2-0527-ea5s0-4e53377661",
-      "score": "123",
+      "task": "f022ca-ba5-5ee4-ebb6-7083f7caf452",
+      "score": "1+2+4",
       "group_task": 1,
       "id": 1
     },
     {
-      "name": "Name 2",
-      "index": "456789",
-      "email": "asdasd@gmail.com",
+      "name": "Piotr",
+      "index": "234567",
+      "email": "piotr@gmail.com",
       "review": "ssssssssssssssssssssssss",
-      "task": "5d0670-08c2-0527-ea5s0-4e53377661",
+      "task": "f022ca-ba5-5ee4-ebb6-7083f7caf452",
       "group_task": 1,
       "id": 2
     },
     {
-      "name": "Name 3",
+      "name": "Adam",
       "index": "789123",
-      "email": "sss@onet.pl",
+      "email": "adam@onet.pl",
       "review": "Praesent sagittis nsss",
-      "task": "5d0670-08c2-0527-ea5s0-4e53377661",
+      "task": "f022ca-ba5-5ee4-ebb6-7083f7caf452",
       "group_task": 2,
       "id": 3
     },
     {
-      "name": "Name 3",
-      "index": "789123",
-      "email": "sss@onet.pl",
+      "name": "Marcel",
+      "index": "987654",
+      "email": "marcel@onet.pl",
       "review": "Praesent sagittis nsss",
-      "task": "5d0670-08c2-0527-ea5s0-4e53377661",
+      "task": "f022ca-ba5-5ee4-ebb6-7083f7caf452",
       "group_task": 3,
       "id": 4
     },
     {
-      "name": "Name 3",
-      "index": "789123",
-      "email": "sss@onet.pl",
+      "name": "Paweł",
+      "index": "357159",
+      "email": "paweł2562@onet.pl",
       "review": "Praesent sagittis nsss",
-      "task": "5d0670-08c2-0527-ea5s0-4e53377661",
+      "task": "f022ca-ba5-5ee4-ebb6-7083f7caf452",
       "group_task": 3,
       "id": 5
+    },
+    {
+      "name": "Zdzisław",
+      "index": "951852",
+      "email": "trerer@onet.pl",
+      "review": "Praesent sagittis nsss",
+      "task": "f022ca-ba5-5ee4-ebb6-7083f7caf452",
+      "group_task": 3,
+      "id": 6
+    },
+    {
+      "name": "Adam",
+      "index": "842685",
+      "email": "sss@onet.pl",
+      "review": "Praesent sagittis nsss",
+      "task": "f022ca-ba5-5ee4-ebb6-7083f7caf452",
+      "group_task": 3,
+      "id": 7
     }
   ],
   "pages": [
     {
       "id": 1,
       "name": "about",
-      "body": "### Sprawozdania z zajęć \n\nsdsdsdsd\n\n- rtrt\n\n- ghgh\n\n1. fgghfgfg\n\n1. ghgh\n\n1. fgfgfg"
+      "body": "# Sprawozdania z zajęć\n\nCelem projektu jest ułatwienie odbioru przez prowadzącego zajęcia sprawozdań z wykonanych przez studentów zadań.\n\nW ramach działania programu przewidywany jest odbiór sprawozdania, przechowanie go w bazie, porównanie czy sprawozdania nie są zbyt podobne (na wzór prostego systemu antyplagiatowego).\n\nProjekt jest realizowany na potrzeby i zlecenie dr Hanćkowiaka."
     },
     {
       "id": 2,
       "name": "home",
-      "body": "### HOME \n\nsdsdsdsd\n\n- rtrt\n\n- ghgh\n\n1. fgghfgfg\n\n1. ghgh\n\n1. fgfgfg"
+      "body": "## UAM, Wydz. Mat. i Inf.:\n- Inżynierski projekt zespołowy (PRI: PRI/1, PRI/2, SDD: Seminarium Dyplomowe)\n- Algorytmy rozproszone (ALR/wykłady+ćwiczenia)\n- AITech/ Zaawansowane algorytmy rozproszone (ZAR/wykłady+ćwiczenia/jupyter)\n- AITech/ Projekt b-r (PBR/zasady oceniania)\n- Sieci komputerowe (SIK/ćwiczenia, DSIK/wykład/dzienni, ZSIK/wykład/zaoczni)\n- Systemy operacyjne, nauczanie (SOP/wykłady+ćwiczenia)\n- Systemy operacyjne i sieci komputerowe, nauczanie (SOS/wykłady+ćwiczenia)\n- Seminarium magisterskie, [patrz tutaj](http://mhanckow.vm.wmi.amu.edu.pl:20002/zajecia/_xowiki/)\n\nMój adres email: [mhanckow@amu.edu.pl](mhanckow@amu.edu.pl)\n\n### Moje dyżury:\n- wtorek 12:00-13:00, sala B3-34\n- Wydz. Mat. i Inf. UAM, ul. Uniwersytetu Poznańskiego 4, 61-614 Poznań\n\n### Inne:\n- stare zajęcia SOP/Systemy operacyjne, wykład (2), ćwiczenia\n- Systemy operacyjne (SOP/ćwiczenia, wykładowca: prof S. Gawiejnowicz)\n- zajęcia dla Geografów: SSI/Sieciowe Sys. Informacyjne, ASD/Alg. i Str. Danych,\n- Technologie aplikacji serwerowych (TAS/ćwiczenia, wykładowca: prof W. Kurc)\n- [stare wykłady](http://mhanckow.vm.wmi.amu.edu.pl:20002/zajecia/_xowiki2/stare_wyklady) i ćwiczenia, lata 1993-???\n- stare tematy prac mgr/lic: 2014, semlic 2014, starsze"
     }
   ]
 }
